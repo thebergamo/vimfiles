@@ -1,6 +1,7 @@
 " .vimrc
-" Author: Pedro Franceschi <pedrohfranceschi@gmail.com>
-" Source: http://github.com/pedrofranceschi/vimfiles
+" Author: Marcos Bérgamo <marcos@thedon.com.br>
+" Source: http://github.com/thebergamo/vimfiles
+" About: Inspired by Pedro Franceschi vimfiles 
 
 " ##### Vundle setup  {{{
 set nocompatible              " be iMproved, required
@@ -43,6 +44,9 @@ Plugin 'haya14busa/incsearch.vim'
 Plugin 'tomasr/molokai'
 Plugin 'rodjek/vim-puppet'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'elentok/plaintasks.vim'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'digitaltoad/vim-jade'
 " }}}
 " ##### Vundle post-setup {{{
 call vundle#end()            " required
@@ -97,9 +101,12 @@ set nowritebackup
 set directory=$HOME/.vim/tmp//,.
 
 " Global tab width.
-set tabstop=4
+set tabstop=2
 " And again, related.
-set shiftwidth=4
+set shiftwidth=2
+
+" Convert tabs to spaces
+set expandtab
 
 " Files open expanded
 set foldlevelstart=50
@@ -114,6 +121,9 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLo
 " Always diff using vertical mode
 set diffopt+=vertical
 
+"Invisible character colors 
+highlight NonText guifg=#4a4a59
+highlight SpecialKey guifg=#4a4a59
 
 " Enable syntax highlighting
 syntax on
@@ -186,6 +196,12 @@ noremap <C-C> <esc>
 
 " Go full-screen
 nnoremap <leader>fs :set lines=999 columns=9999<cr>
+
+" Highlighting lines and columns
+nnoremap <Leader>l :set cursorline!
+nnoremap <Leader>c :set cursorcolumn!
+nnoremap <Leader>cl :set cursorline! cursorcolumn!
+
 " }}}
 " }}}
 " ##### Plugin settings  {{{
@@ -311,6 +327,12 @@ autocmd BufRead,BufNewFile *.md set filetype=markdown
 autocmd BufRead,BufNewFile *.md set wrap
 
 autocmd BufEnter *.md colorscheme badwolf
+" }}}
+" ##### Jade {{{
+autocmd BufRead,BufNewFile *.jade set filetype=jade
+autocmd FileType jade set shiftwidth=2
+autocmd FileType jade set tabstop=2
+
 " }}}
 " ##### JavaScript  {{{
 " Sets javascript syntax for *.json files.
