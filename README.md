@@ -1,6 +1,8 @@
 thebergamo's vimfiles
 ========
 
+PS: This is an fork of pedrofranceschi's vimfiles with some cool plugins and shortcuts to improve my development. 
+
 These are my vimfiles. I created them almost from scratch when I started using Vim and adapted them to my needs.
 
 #### What's included
