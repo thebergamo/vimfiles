@@ -1,4 +1,4 @@
-pedrofranceschi's vimfiles
+thebergamo's vimfiles
 ========
 
 These are my vimfiles. I created them almost from scratch when I started using Vim and adapted them to my needs.
@@ -33,6 +33,9 @@ These are my vimfiles. I created them almost from scratch when I started using V
 * [Sparkup](https://github.com/rstacruz/sparkup)
 * [incsearch](https://github.com/haya14busa/incsearch.vim)
 * [puppet](https://github.com/rodjek/vim-puppet)
+* [plaintasks.vim](https://github.com/elentok/plaintask.vim)
+* [editorconfig](https://github.com/editorconfig/editorconfig-vim)
+* [vim-jade](https://github.com/digitaltoad/vim-jade)
 
 #### Installing (step by step)
 
@@ -43,7 +46,7 @@ Go to your home directory:
 Clone my vimfiles repo:
 
 
-    git clone --recursive https://github.com/pedrofranceschi/vimfiles.git
+    git clone --recursive https://github.com/thebergamo/vimfiles.git
 
 Rename the repo to .vim in your home directory:
 
