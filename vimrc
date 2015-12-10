@@ -198,9 +198,9 @@ noremap <C-C> <esc>
 nnoremap <leader>fs :set lines=999 columns=9999<cr>
 
 " Highlighting lines and columns
-nnoremap <Leader>l :set cursorline!
-nnoremap <Leader>c :set cursorcolumn!
-nnoremap <Leader>cl :set cursorline! cursorcolumn!
+nnoremap <Leader>ln :set cursorline!<cr>
+nnoremap <Leader>cn :set cursorcolumn!<cr>
+nnoremap <Leader>cl :set cursorline! cursorcolumn!<cr>
 
 " }}}
 " }}}
