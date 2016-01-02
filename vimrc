@@ -47,6 +47,7 @@ Plugin 'elixir-lang/vim-elixir'
 Plugin 'elentok/plaintasks.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'digitaltoad/vim-jade'
+Plugin 'keith/parsec.vim'
 " }}}
 " ##### Vundle post-setup {{{
 call vundle#end()            " required
@@ -128,8 +129,11 @@ highlight SpecialKey guifg=#4a4a59
 " Enable syntax highlighting
 syntax on
 " Sets the colorscheme for terminal sessions too.
-colorscheme molokai
-autocmd BufEnter * colorscheme molokai
+colorscheme parsec
+autocmd BufEnter * colorscheme parsec
+
+" Auto enable higlight cursors
+set cursorline cursorcolumn
 
 " Leader = ,
 let mapleader = ","
