@@ -8,6 +8,7 @@ These are my vimfiles. I created them almost from scratch when I started using V
 #### What's included
 
 * [Molokai (colorscheme)](https://github.com/tomasr/molokai)
+* [Parsec (colorscheme default)](https://github.com/keith/parsec.vim)
 * [CtrlP](https://github.com/kien/ctrlp.vim)
 * [vim-objc](https://github.com/b4winckler/vim-objc)
 * [airline](https://github.com/bling/vim-airline)
@@ -40,6 +41,8 @@ These are my vimfiles. I created them almost from scratch when I started using V
 * [vim-jade](https://github.com/digitaltoad/vim-jade)
 
 #### Installing (step by step)
+First, you need to install [Fira Code](https://github.com/tonsky/FiraCode) font for Powerline and common character ligatures.
+
 
 Go to your home directory:
 
