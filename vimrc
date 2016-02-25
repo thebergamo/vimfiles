@@ -129,8 +129,8 @@ highlight SpecialKey guifg=#4a4a59
 " Enable syntax highlighting
 syntax on
 " Sets the colorscheme for terminal sessions too.
-colorscheme parsec
-autocmd BufEnter * colorscheme parsec
+colorscheme molokai
+autocmd BufEnter * colorscheme molokai
 
 " Auto enable higlight cursors
 set cursorline cursorcolumn
@@ -344,6 +344,10 @@ autocmd BufRead,BufNewFile *.json set filetype=javascript
 
 " Sets html syntax for *.ejs files.
 autocmd BufRead,BufNewFile *.ejs set filetype=html
+
+" Sets fold for js files
+autocmd FileType javascript set foldlevel0
+autocmd FileType javascript set foldmethod=indent
 " }}}
 " ##### Vim {{{
 " Make vimrcs open folded
