@@ -39,6 +39,7 @@ These are my vimfiles. I created them almost from scratch when I started using V
 * [plaintasks.vim](https://github.com/elentok/plaintask.vim)
 * [editorconfig](https://github.com/editorconfig/editorconfig-vim)
 * [vim-jade](https://github.com/digitaltoad/vim-jade)
+* [ansible-vim](https://github.com/pearofducks/ansible-vim)
 
 #### Installing (step by step)
 First, you need to install [Fira Code](https://github.com/tonsky/FiraCode) font for Powerline and common character ligatures.

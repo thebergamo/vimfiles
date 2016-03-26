@@ -48,6 +48,7 @@ Plugin 'elentok/plaintasks.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'keith/parsec.vim'
+Plugin 'pearofducks/ansible-vim'
 " }}}
 " ##### Vundle post-setup {{{
 call vundle#end()            " required
@@ -129,8 +130,8 @@ highlight SpecialKey guifg=#4a4a59
 " Enable syntax highlighting
 syntax on
 " Sets the colorscheme for terminal sessions too.
-colorscheme molokai
-autocmd BufEnter * colorscheme molokai
+colorscheme parsec
+autocmd BufEnter * colorscheme parsec
 
 " Auto enable higlight cursors
 set cursorline cursorcolumn
@@ -265,6 +266,10 @@ let g:NumberToggleTrigger="<leader>ll"
 " ##### togglelist {{{
 let g:toggle_list_copen_command="Copen"
 " }}}
+" ##### Ansible {{{
+let g:ansible_attribute_highlight = "ob"
+let g:ansible_extra_keywords_highlight = 1
+" }}}
 " }}}
 " ##### Ack motions {{{
 " (from Steve Losh's vimrc)
@@ -346,7 +351,7 @@ autocmd BufRead,BufNewFile *.json set filetype=javascript
 autocmd BufRead,BufNewFile *.ejs set filetype=html
 
 " Sets fold for js files
-autocmd FileType javascript set foldlevel0
+autocmd FileType javascript set foldlevel=0
 autocmd FileType javascript set foldmethod=indent
 " }}}
 " ##### Vim {{{
